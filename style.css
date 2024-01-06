@@ -1,0 +1,129 @@
+
+:root{
+    --time:10s;
+}
+
+.img-reset {
+    height: 2rem;
+    width: 2rem;
+}
+
+.alsi {
+    height: 4rem;
+    width: 4rem;
+   /* Make the hero image circular */
+}
+
+.hero-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-20%, -30%);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+ul {
+    height: 5rem;
+    width: 5rem;
+    list-style: none;
+    padding: 0;
+    border-radius: 999px;
+    transform-origin: center;
+    animation: r var(--time) linear infinite;
+}
+
+@keyframes r {
+    to{
+        transform: rotate(360deg);
+    }
+ 
+}
+
+@keyframes items1 {
+    to{
+        transform: translate(-1.8rem) rotate(-360deg);
+    }
+ 
+}
+
+@keyframes items2 {
+    to{
+        transform: translate(5rem) rotate(-360deg);
+    }
+ 
+}
+
+@keyframes items3 {
+    to{
+        transform:translate(1.5rem, -2.3rem) rotate(-360deg);
+    }
+ 
+}
+
+@keyframes items4 {
+    to{
+        transform: translate(-2rem, 3.2rem) rotate(-360deg);
+    }
+ 
+}
+
+@keyframes items5 {
+    to{
+        transform:translate(5rem, 3.2rem) rotate(-360deg);
+    }
+ 
+}
+
+@keyframes items6 {
+    to{
+        transform: translate(1.5rem, 5.3rem) rotate(-360deg);
+    }
+ 
+}
+
+li {
+    position: absolute;
+    transition: all;
+    
+}
+
+li:nth-child(1) {
+    transform: translate(-1.8rem);
+    animation: items1 var(--time) linear infinite;
+}
+
+li:nth-child(2) {
+    transform: translate(5rem);
+    animation: items2 var(--time) linear infinite;
+
+}
+
+li:nth-child(3) {
+    transform: translate(1.5rem, -2.3rem) ;
+    animation: items3 var(--time) linear infinite;
+
+}
+
+li:nth-child(4) {
+    transform: translate(-2rem, 3.2rem);
+    animation: items4 var(--time) linear infinite;
+
+}
+
+li:nth-child(5) {
+    transform: translate(5rem, 3.2rem) ;
+    animation: items5 var(--time) linear infinite;
+
+}
+
+li:nth-child(6) {
+    transform: translate(1.5rem, 5.3rem);
+    animation: items6 var(--time) linear infinite;
+
+}
